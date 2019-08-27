@@ -1,0 +1,5 @@
+numbers = list(range(1,20))
+a = min(numbers)
+b = max(numbers)
+c = sum(numbers)
+print(a,b,c)
