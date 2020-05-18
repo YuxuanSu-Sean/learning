@@ -31,7 +31,7 @@ class Car():
 # my_new_car.read_odometer()
 
 class Battery():
-    def __init__(self, battery_size=85):
+    def __init__(self, battery_size=70):
         self.battery_size = battery_size
 
     def describe_battery(self):
@@ -48,6 +48,12 @@ class Battery():
         print(message)
 
 
+    def upgrade_battery(self):
+        if self.battery_size != 85:
+            self.battery_size = 85
+
+
+
 class ElectricCar(Car):
 
 
@@ -60,7 +66,11 @@ class ElectricCar(Car):
     # def descriptive_battery(self):
     #     print("This car has a " + str(self.battery_size) + '-KWh battery.')
 
+# my_tesla = ElectricCar('teska', 'model s', 2016)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+
 my_tesla = ElectricCar('teska', 'model s', 2016)
-print(my_tesla.get_descriptive_name())
-my_tesla.battery.describe_battery()
+my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()
