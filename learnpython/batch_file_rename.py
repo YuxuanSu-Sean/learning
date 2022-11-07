@@ -30,22 +30,4 @@ def batch_rename(work_dir, old_ext, new_ext):
     print("完成重命名")
     print(os.listdir(work_dir))
 
-def main():
-    """
-    main函数
-    """
-    # 命令行参数
-    parser = get_parser()
-    args = vars(parser.parse_args())
-    # 从命令行参数中依次解析出参数
-    work_dir = args['work_dir'][0]
-    old_ext = args['old_ext'][0]
-    if old_ext[0] != '.':
-        old_ext = '.' + old_ext
-    new_ext = args['new_ext'][0]
-    if new_ext[0] != '.':
-        new_ext = '.' + new_ext
-        
-    batch_rename(work_dir, old_ext, new_ext)
-
 batch_rename('/Users/suyuxuan/Downloads/rename', '.ts', '.mp4')
