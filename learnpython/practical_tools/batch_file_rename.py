@@ -30,4 +30,4 @@ def batch_rename(work_dir, old_ext, new_ext):
     print("完成重命名")
     print(os.listdir(work_dir))
 
-batch_rename('/Users/suyuxuan/Downloads/rename', '.ts', '.mp4')
+batch_rename('/Users/suyuxuan/Downloads/rename', '.mp4', '.mp4')
