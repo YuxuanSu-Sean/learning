@@ -9,6 +9,6 @@ while True:
     if name == "quit!":
         break
     else:
-        print("The name " + name.title() + " you called was wrong!")
+        print("The name " + name.title() + " you called was wrong！！!")
 
 
