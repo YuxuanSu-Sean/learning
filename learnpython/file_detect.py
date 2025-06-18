@@ -19,7 +19,7 @@ def count_files_by_extension(folder_path):
 
 
 if __name__ == "__main__":
-    folder_path = '/Users/suyuxuan/Documents'  # 可修改为你要遍历的文件夹路径
+    folder_path = '/Users/suyuxuan/Documents/工作/项目文件/20250217_上海_上海市普陀区数智融合一体化大数据平台（一期）建设项目实施/项目实施/需求调研阶段'  # 可修改为你要遍历的文件夹路径
     result = count_files_by_extension(folder_path)
     for ext, count in result.items():
         print(f"后缀为 {ext} 的文件数量：{count}")
